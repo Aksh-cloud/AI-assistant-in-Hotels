@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering System</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="png">
+</head>
+<body>
+    <div class="container" id="greeting-container">
+        <h1>Welcome to Akshobhya's Restaurant</h1>
+        <p>Enter your name:</p>
+        <input type="text" id="user-name" placeholder="Your Name" />
+        <button onclick="greetUser()">Start Ordering</button>
+    </div>
+
+    
+    <div class="container" id="menu-container">
+        <h2>Menu</h2>
+        <form id="order-form">
+            <div id="menu-list"></div>
+            <button type="button" class="menu-add-fin" onclick="addToOrder()">Add to Order</button>
+            <button type="button" class="menu-add-fin" onclick="finishOrder()">Finish Order</button>
+        </form>
+    </div>
+
+    <div class="container" id="order-summary-container" style="display: none;">
+        <h2>Order Summary</h2>
+        <div id="order-summary"></div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="CSS/pay.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="png">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Page</h1>
+        <form id="payment-form">
+            <div class="payment-option">
+                <input type="radio" id="phonepay" name="payment-method" value="Phone Pay">
+                <label for="phonepay">Phone Pay</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="card" name="payment-method" value="Credit/Debit Card">
+                <label for="card">Credit/Debit Card</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
